@@ -29,7 +29,7 @@ public class AudioManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        InvokeRepeating("PlayBGM",1f,100f);
+        InvokeRepeating("PlayBGM",1f,187f);
     }
 
     public void PlayBGM(){

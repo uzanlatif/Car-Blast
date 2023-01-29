@@ -18,6 +18,6 @@ public class Spawner : MonoBehaviour
         var position = new Vector3(Random.Range(-4.603f, 3.37f),0.385f, transform.position.z);
 
         var rand = Random.Range(0,5);
-        Instantiate(car[rand],position, Quaternion.identity);
+        Instantiate(car[rand],position, Quaternion.Euler(new Vector3(0, 180, 0)));
     }
 }
