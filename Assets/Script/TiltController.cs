@@ -5,6 +5,8 @@ using UnityEngine;
 public class TiltController : MonoBehaviour
 {
     public GameObject canvasUI;
+    public GameOverControl control;
+    public GameObject Audio;
 
     Rigidbody rb;
     float dx;
@@ -14,6 +16,7 @@ public class TiltController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Audio = GameObject.FindGameObjectWithTag("Audio");
     }
 
     // Update is called once per frame
@@ -32,6 +35,13 @@ public class TiltController : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag=="car"){
             canvasUI.SetActive(true);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if(other.gameObject.tag=="Coins"){
+            control.addScore();
+            Audio.GetComponent<AudioManager>().PlayCoin();
         }
     }
 }

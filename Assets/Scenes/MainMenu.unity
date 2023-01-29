@@ -372,7 +372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -246.9862, y: 36}
+  m_AnchoredPosition: {x: -246.9862, y: 304}
   m_SizeDelta: {x: 333.5291, y: 81.7968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250407244
@@ -456,7 +456,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 250407244}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916366407}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &302098769
 GameObject:
   m_ObjectHideFlags: 3
@@ -676,6 +688,16 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     source: {fileID: 0}
+  - name: Coin
+    clip: {fileID: 8300000, guid: 502a3158dca210a43a00fe395fef8a95, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Button
+    clip: {fileID: 8300000, guid: 2529735ce16dd7b45852516bca792d19, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!4 &916366408
 Transform:
   m_ObjectHideFlags: 0
@@ -890,6 +912,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 916366407}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 967566061}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: Next
@@ -1003,7 +1037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106379430}
   m_LocalRotation: {x: 0, y: -0.7561493, z: 0, w: 0.6543992}
-  m_LocalPosition: {x: -1.55, y: 0.373, z: -5.4}
+  m_LocalPosition: {x: -1.616, y: 0.373, z: -5.465}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1241,6 +1275,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 916366407}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 967566061}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: Previous
@@ -1404,7 +1450,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -246.9862, y: -77}
+  m_AnchoredPosition: {x: -246.9862, y: 191}
   m_SizeDelta: {x: 331.1941, y: 82.2696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1736634991
@@ -1488,7 +1534,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1736634991}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 916366407}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1791617590
 GameObject:
   m_ObjectHideFlags: 3
@@ -1938,7 +1996,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975055135}
   m_LocalRotation: {x: 0, y: -0.7561493, z: 0, w: 0.6543992}
-  m_LocalPosition: {x: -1.55, y: 0.373, z: -5.4}
+  m_LocalPosition: {x: -1.616, y: 0.373, z: -5.465}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2028,7 +2086,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -246.9862, y: 139}
+  m_AnchoredPosition: {x: -246.9862, y: 407}
   m_SizeDelta: {x: 332.3616, y: 81.7968}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2028737527
@@ -2113,6 +2171,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 916366407}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlayButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 967566061}
         m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: Play

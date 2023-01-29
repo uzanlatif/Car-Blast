@@ -36,6 +36,12 @@ public class AudioManager : MonoBehaviour
         Play("BGM");
     }
 
+    public void PlayButton(){
+        Play("Button");
+    }
+    public void PlayCoin(){
+        Play("Coin");
+    }
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
