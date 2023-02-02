@@ -7,6 +7,7 @@ public class TiltController : MonoBehaviour
     public GameObject canvasUI;
     public GameOverControl control;
     public GameObject Audio;
+    public Innersitial ad;
 
     Rigidbody rb;
     float dx;
@@ -35,6 +36,7 @@ public class TiltController : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.tag=="car"){
             canvasUI.SetActive(true);
+            ad.GameOver();
         }
     }
 
