@@ -6,13 +6,13 @@ using GoogleMobileAds.Api;
 public class Innersitial : MonoBehaviour
 {
     private InterstitialAd interstitial;
-
+    
+    private void Awake() {
+        MobileAds.Initialize(initstatus => {});
+        RequestInterstitial();
+    }
     public void GameOver(){
         Debug.Log("Show Ad");
-
-        MobileAds.Initialize(initstatus => {});
-
-        RequestInterstitial();
 
         if (this.interstitial.IsLoaded()) 
             this.interstitial.Show();
