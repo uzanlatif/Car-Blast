@@ -8,7 +8,12 @@ public class MenuManager : MonoBehaviour
     public GameObject[] Cam;
     int counter;
 
+    private void Awake() {
+        Screen.orientation = ScreenOrientation.LandscapeLeft;  
+    }
+
     private void Start() {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         counter=3000;
         SelectedCar();
     }

@@ -7,6 +7,7 @@ public class SpawnManager : MonoBehaviour
     public string MyCar;
     public GameObject[] cars;
     private void Awake() {
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
         MyCar = PlayerPrefs.GetString("Cars");
 
         if(MyCar == "MonsterCar"){
